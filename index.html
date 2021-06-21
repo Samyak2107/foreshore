@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreshore | Your discount shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="main">
+        <header>
+            <h2 class="logo">FORESHORE</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="./assets/sale-main.mp4" muted autoplay loop></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>We Get The Leads</h2>
+            <h3>You Get The Loot</h3>
+            <p>Welcome to Foreshore! Your very personalized discount shop. Just tell us the product you want to buy and earn real and instant cashback.</p>
+            <a href="./about.html">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="./assets/facebook-logo.png" alt="fb"></a></li>
+            <li><a href="https://instagram.com/foreshore99" target="_blank"><img src="./assets/insta-logo.png" alt="insta"></a></li>
+            <li><a href="#"><img src="./assets/twitter-logo.png" alt="twitter"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blogs</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const main = document.querySelector('.main');
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            main.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
